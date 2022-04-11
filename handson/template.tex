@@ -1,0 +1,694 @@
+%%
+%% Copyright 2021 OXFORD UNIVERSITY PRESS
+%%
+%% This file is part of the 'pnas-nexus-authoring-template Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'pnas-nexus-authoring-template Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for PNAS Nexus's document class `oup-authoring-template'
+%% with bibliographic references
+%%
+
+\documentclass[unnumsec,webpdf,contemporary,large]{oup-authoring-template}%
+
+%\usepackage{showframe}
+
+\graphicspath{{Fig/}}
+
+% line numbers
+%\usepackage[mathlines, switch]{lineno}
+%\usepackage[right]{lineno}
+
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}%
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}
+
+\usepackage{draftwatermark}
+\SetWatermarkText{Draft}
+
+\begin{document}
+
+\journaltitle{PNAS Nexus}
+\DOI{DOI HERE}
+\copyrightyear{2021}
+\pubyear{2021}
+\access{Advance Access Publication Date: Day Month Year}
+\appnotes{Paper}
+
+\firstpage{1}
+
+%\subtitle{Subject Section}
+
+\title[Short article title in sentence case]{Article title in sentence case}
+
+\author[a,$\ast$]{First Author}
+\author[b]{Second Author}
+\author[c]{Third Author}
+\author[d]{Fourth Author}
+\author[c, d]{Fifth Author}
+
+\authormark{Author Name et al.}
+
+\address[a]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
+\address[b]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
+\address[c]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
+\address[d]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
+
+\corresp[$\ast$]{To whom correspondence should be addressed: \href{email:email-id.com}{email-id.com}}
+
+\received{Date}{0}{Year}
+\accepted{Date}{0}{Year}
+
+%\editor{Associate Editor: Name}
+
+\abstract{Abstracts must be able to stand alone and so cannot contain citations to
+the paper's references, equations, etc. An abstract must consist of a single
+paragraph and be concise. Because of online formatting, abstracts must appear
+as plain as possible.}
+\keywords{keyword1, keyword2, keyword3, keyword4}
+
+%\boxedtext{
+% Research reports require a significance statement of between 50 and 120 words. Abbreviations are permitted, but citations cannot be included. If required, un-comment this element in the template to include. The heading is included automatically.
+%}
+
+\maketitle
+\section{Introduction}
+
+\section{This is an example for first level head - section head}\label{sec2}
+
+Once data are disseminated, whatever contractual or other obligations are placed on those receiving the
+data, the data are effectively out of a data providers' control. Data providers must be certain that the data
+disseminated do not provide a risk of disclosure necessitating a reduction in the detail available.
+Data providers must be certain that the data disseminated do not provide a risk of disclosure necessitating
+a reduction in the detail available, or they are constrained to using a resource intensive auditing regime,
+and are likely to discover any data misuse only after it has happened (refer Section~\ref{sec5}).
+
+\subsection{This is an example for second level head - subsection head}\label{subsec1}
+
+Once data are disseminated, whatever contractual or other obligations are placed on those receiving the
+data, the data are effectively out of a data providers' control. Data providers must be certain that the data
+disseminated do not provide a risk of disclosure necessitating a reduction in the detail available, or they are
+constrained to using a resource intensive auditing regime, and are likely to discover any data misuse only
+after it has happened.
+
+\subsubsection{This is an example for third level head - subsubsection head}\label{subsubsec1}
+
+Once data are disseminated, whatever contractual or other obligations are placed on those receiving the
+data, the data are effectively out of a data providers' control. Data providers must be certain that the data
+disseminated do not provide a risk of disclosure necessitating a reduction in the detail available, or they are
+constrained to using a resource intensive auditing regime, and are likely to discover any data misuse only
+after it has happened.
+
+\paragraph{This is an example for fourth level head - paragraph head}
+
+Once data are disseminated, whatever contractual or other obligations are placed on those receiving the data, the data
+are effectively out of a data providers' control.  The United Kingdom has a long tradition of safe data use by researchers.
+The United Kingdom has a long tradition of safe data use by researchers.
+
+\section{This is an example for first level head}\label{sec3}
+
+\subsection{This is an example for second level head - subsection head}\label{subsec2}
+
+\subsubsection{This is an example for third level head - subsubsection head}\label{subsubsec2}
+
+In the 50 years that the UK Data Archive has been making data available for social and economic research, there have been no
+damaging disclosures of personal information by academic researchers. While increasing use of detailed and sometimes sensitive
+data can contribute valuable insights for targeting policies, we cannot be
+complacent. In order to support our policy needs and continue to use data safely and effectively, we
+need a research infrastructure that data confidentiality while enabling researchers to undertake
+innovative research.
+
+\paragraph{This is an example for fourth level head - paragraph head}
+
+A first step toward protecting sensitive data is to keep control of it, to disseminate access, not data. Data providers internationally are increasing, moving toward systems in which researchers remotely accessed.
+
+
+
+\section{Equations}\label{sec4}
+Equations in \LaTeX{} can either be inline or on-a-line by itself. For inline equations use the \verb+$...$+ commands. Eg: The equation
+$H\psi = E \psi$ is written via the command \verb+$H \psi = E \psi$+.
+
+For on-a-line by itself equations (with auto generated equation numbers)
+one can use the equation or eqnarray environments:
+\begin{equation}
+\|\tilde{X}(k)\|^2 \leq\frac{\sum\limits_{i=1}^{p}\left\|\tilde{Y}_i(k)\right\|^2+\sum\limits_{j=1}^{q}\left\|\tilde{Z}_j(k)\right\|^2 }{p+q}.\label{eq1}
+\end{equation}
+where,
+\begin{align}
+D_\mu &=  \partial_\mu - ig \frac{\lambda^a}{2} A^a_\mu \nonumber \\
+F^a_{\mu\nu} &= \partial_\mu A^a_\nu - \partial_\nu A^a_\mu + g f^{abc} A^b_\mu A^a_\nu\label{eq2}
+\end{align}
+Notice the use of \verb+\nonumber+ in the align environment at the end
+of each line, except the last, so as not to produce equation numbers on
+lines where no equation numbers are required. The \verb+\label{}+ command
+should only be used at the last line of an align environment where
+\verb+\nonumber+ is not used.
+\begin{equation}
+Y_\infty = \left( \frac{m}{\textrm{GeV}} \right)^{-3}
+    \left[ 1 + \frac{3 \ln(m/\textrm{GeV})}{15}
+    + \frac{\ln(c_2/5)}{15} \right]
+\end{equation}
+The class file also supports the use of \verb+\mathbb{}+, \verb+\mathscr{}+ and
+\verb+\mathcal{}+ commands. As such \verb+\mathbb{R}+, \verb+\mathscr{R}+
+and \verb+\mathcal{R}+ produces $\mathbb{R}$, $\mathscr{R}$ and $\mathcal{R}$
+respectively.
+
+
+
+\section{Tables}\label{sec5}
+
+Tables can be inserted via the normal table and tabular environment. To put
+footnotes inside tables one has to 12pt use the additional ``tablenotes" environment
+enclosing the tabular environment. The footnote appears just below the table
+itself (refer Tables~\ref{tab1} and \ref{tab2}).
+
+
+\begin{verbatim}
+\begin{table}[t]
+\begin{center}
+\begin{minipage}{<width>}
+\caption{<table-caption>\label{<table-label>}}%
+\begin{tabular}{@{}llll@{}}
+\toprule
+column 1 & column 2 & column 3 & column 4\\
+\midrule
+row 1 & data 1 & data 2          & data 3 \\
+row 2 & data 4 & data 5$^{1}$ & data 6 \\
+row 3 & data 7 & data 8      & data 9$^{2}$\\
+\botrule
+\end{tabular}
+\begin{tablenotes}%
+\item Source: Example for source.
+\item[$^{1}$] Example for a 1st table footnote.
+\item[$^{2}$] Example for a 2nd table footnote.
+\end{tablenotes}
+\end{minipage}
+\end{center}
+\end{table}
+\end{verbatim}
+
+
+Lengthy tables which doesn't fit in textwidth should be set as rotated table. For this, we need to use \verb+\begin{sidewaystable}...+ \verb+\end{sidewaystable}+ instead of\break \verb+\begin{table}...+ \verb+\end{table}+ environment.
+
+
+\begin{table}[!t]
+\caption{Caption text\label{tab1}}%
+\begin{tabular*}{\columnwidth}{@{\extracolsep\fill}llll@{\extracolsep\fill}}
+\toprule
+column 1 & column 2  & column 3 & column 4\\
+\midrule
+row 1    & data 1   & data 2  & data 3  \\
+row 2    & data 4   & data 5$^{1}$  & data 6  \\
+row 3    & data 7   & data 8  & data 9$^{2}$  \\
+\botrule
+\end{tabular*}
+\begin{tablenotes}%
+\item Source: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote
+\item[$^{1}$] Example for a first table footnote.
+\item[$^{2}$] Example for a second table footnote.
+\end{tablenotes}
+\end{table}
+
+\begin{table*}[ht]
+\caption{Example of a lengthy table which is set to full textwidth.\label{tab2}}
+\tabcolsep=0pt%%
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccc@{\extracolsep{\fill}}}
+\toprule%
+& \multicolumn{3}{@{}c@{}}{Element 1$^{1}$} & \multicolumn{3}{@{}c@{}}{Element 2$^{2}$} \\
+\cline{2-4}\cline{5-7}%
+Project & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
+\midrule
+Element 3  & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$\\
+Element 4  & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$\\
+\botrule
+\end{tabular*}
+\begin{tablenotes}%
+\item Note: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote
+\item[$^{1}$] Example for a first table footnote.
+\item[$^{2}$] Example for a second table footnote.\vspace*{6pt}
+\end{tablenotes}
+\end{table*}
+
+\begin{sidewaystable}%[!p]
+\caption{Tables which are too long to fit, should be written using the ``sidewaystable" environment as shown here\label{tab3}}
+\tabcolsep=0pt%
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccc@{\extracolsep{\fill}}}
+\toprule%
+& \multicolumn{3}{@{}c@{}}{Element 1$^{1}$}& \multicolumn{3}{@{}c@{}}{Element$^{2}$} \\
+\cline{2-4}\cline{5-7}%
+Projectile & Energy     & $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
+\midrule
+Element 3 & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$ \\
+Element 4 & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$ \\
+\botrule
+\end{tabular*}
+\begin{tablenotes}%
+\item Note: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote
+\item[$^{1}$] This is an example of table footnote
+\end{tablenotes}
+\end{sidewaystable}
+
+
+\section{Figures}\label{sec6}
+
+As per the \LaTeX\ standards one has to use eps images for \verb+latex+ compilation and \verb+pdf/jpg/png+ images for
+\verb+pdflatex+ compilation. This is one of the major difference between \verb+latex+
+and \verb+pdflatex+. The images should be single page documents. The command for inserting images
+for \verb+latex+ and \verb+pdflatex+ can be generalized. The package used to insert images in \verb+latex/pdflatex+ is the
+graphicx package. Figures can be inserted via the normal figure environment as shown in the below example:
+
+
+\begin{figure}[!t]%
+\centering
+{\color{black!20}\rule{213pt}{37pt}}
+\caption{This is a widefig. This is an example of long caption this is an example of long caption  this is an example of long caption this is an example of long caption}\label{fig1}
+\end{figure}
+
+\begin{figure*}[!t]%
+\centering
+{\color{black!20}\rule{438pt}{74pt}}
+\caption{This is a widefig. This is an example of long caption this is an example of long caption  this is an example of long caption this is an example of long caption}\label{fig2}
+\end{figure*}
+
+
+\begin{verbatim}
+\begin{figure}[t]
+        \centering\includegraphics{<eps-file>}
+        \caption{<figure-caption>}
+        \label{<figure-label>}
+\end{figure}
+\end{verbatim}
+
+Test text here.
+
+For sample purpose, we have included the width of images in the optional argument of \verb+\includegraphics+ tag. Please ignore this. Lengthy figures which doesn't fit in textwidth should be set as rotated mode. For rotated figures, we need to use \verb+\begin{sidewaysfigure}+ \verb+...+ \verb+\end{sidewaysfigure}+ instead of \verb+\begin{figure}+ \verb+...+ \verb+\end{figure}+ environment.
+
+\begin{sidewaysfigure}%
+\centering
+{\color{black!20}\rule{610pt}{102pt}}
+\caption{This is an example for sideways figure. This is an example of long caption this is an example of long caption  this is an example of long caption this is an example of long caption}\label{fig3}
+\end{sidewaysfigure}
+
+
+
+\section{Algorithms, program codes and listings}\label{sec7}
+
+Packages \verb+algorithm+, \verb+algorithmicx+ and \verb+algpseudocode+ are used for setting algorithms in latex.
+For this, one has to use the below format:
+
+
+\begin{verbatim}
+\begin{algorithm}
+\caption{<alg-caption>}\label{<alg-label>}
+\begin{algorithmic}[1]
+. . .
+\end{algorithmic}
+\end{algorithm}
+\end{verbatim}
+
+
+We need to refer above listed package documentations for more details before setting \verb+algorithm+ environment.
+To set program codes, one has to use \verb+program+, package. We need to use \verb+\begin{program}+ \verb+...+
+\verb+\end{program}+ environment to set program codes. A fast exponentiation procedure:
+
+\begin{algorithm}[!t]
+\caption{Calculate $y = x^n$}\label{algo1}
+\begin{algorithmic}[1]
+\Require $n \geq 0 \vee x \neq 0$
+\Ensure $y = x^n$
+\State $y \Leftarrow 1$
+\If{$n < 0$}
+        \State $X \Leftarrow 1 / x$
+        \State $N \Leftarrow -n$
+\Else
+        \State $X \Leftarrow x$
+        \State $N \Leftarrow n$
+\EndIf
+\While{$N \neq 0$}
+        \If{$N$ is even}
+            \State $X \Leftarrow X \times X$
+            \State $N \Leftarrow N / 2$
+        \Else[$N$ is odd]
+            \State $y \Leftarrow y \times X$
+            \State $N \Leftarrow N - 1$
+        \EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+Similarly, for \verb+listings+, one has to use \verb+listings+ package. \verb+\begin{lstlisting}+ \verb+...+ \verb+\end{lstlisting}+ environment is used to set environments similar to \verb+verbatim+ environment. Refer \verb+lstlisting+, package documentation for more details on this.
+
+
+\begin{minipage}{\hsize}%
+\lstset{language=Pascal}% Set your language (you can change the language for each code-block optionally)
+\begin{lstlisting}[frame=single,framexleftmargin=-1pt,framexrightmargin=-17pt,framesep=12pt,linewidth=0.98\textwidth]% Start your code-block
+for i:=maxint to 0 do
+begin
+{ do nothing }
+end;
+Write('Case insensitive ');
+Write('Pascal keywords.');
+\end{lstlisting}
+\end{minipage}
+
+
+\section{Cross referencing}\label{sec8}
+
+Environments such as figure, table, equation, align can have a label
+declared via the \verb+\label{#label}+ command. For figures and table
+environments one should use the \verb+\label{}+ command inside or just
+below the \verb+\caption{}+ command.  One can then use the
+\verb+\ref{#label}+ command to cross-reference them. As an example, consider
+the label declared for Figure \ref{fig1} which is
+\verb+\label{fig1}+. To cross-reference it, use the command
+\verb+ Figure \ref{fig1}+, for which it comes up as
+``Figure~\ref{fig1}".
+
+\subsection{Details on reference citations}\label{subsec3}
+
+With standard numerical .bst files, only numerical citations are possible.
+With an author-year .bst file, both numerical and author-year citations are possible.
+
+If author-year citations are selected, \verb+\bibitem+ must have one of the following forms:
+
+
+{\footnotesize%
+\begin{verbatim}
+\bibitem[Jones et al.(1990)]{key}...
+\bibitem[Jones et al.(1990)Jones,
+                Baker, and Williams]{key}...
+\bibitem[Jones et al., 1990]{key}...
+\bibitem[\protect\citeauthoryear{Jones,
+                Baker, and Williams}
+                {Jones et al.}{1990}]{key}...
+\bibitem[\protect\citeauthoryear{Jones et al.}
+                {1990}]{key}...
+\bibitem[\protect\astroncite{Jones et al.}
+                {1990}]{key}...
+\bibitem[\protect\citename{Jones et al., }
+                1990]{key}...
+\harvarditem[Jones et al.]{Jones, Baker, and
+                Williams}{1990}{key}...
+\end{verbatim}}
+
+
+This is either to be made up manually, or to be generated by an
+appropriate .bst file with BibTeX. Then,
+
+
+{%
+\begin{verbatim}
+                    Author-year mode
+                        || Numerical mode
+\citet{key} ==>>  Jones et al. (1990)
+                        || Jones et al. [21]
+\citep{key} ==>> (Jones et al., 1990) || [21]
+\end{verbatim}}
+
+
+\noindent
+Multiple citations as normal:
+
+
+{%
+\begin{verbatim}
+\citep{key1,key2} ==> (Jones et al., 1990;
+                         Smith, 1989)||[21,24]
+        or (Jones et al., 1990, 1991)||[21,24]
+        or (Jones et al., 1990a,b)   ||[21,24]
+\end{verbatim}}
+
+
+\noindent
+\verb+\cite{key}+ is the equivalent of \verb+\citet{key}+ in author-year mode
+and  of \verb+\citep{key}+ in numerical mode. Full author lists may be forced with
+\verb+\citet*+ or \verb+\citep*+, e.g.
+
+
+{%
+\begin{verbatim}
+\citep*{key} ==>> (Jones, Baker, and Mark, 1990)
+\end{verbatim}}
+
+
+\noindent
+Optional notes as:
+
+
+{%
+\begin{verbatim}
+\citep[chap. 2]{key}     ==>>
+        (Jones et al., 1990, chap. 2)
+\citep[e.g.,][]{key}     ==>>
+        (e.g., Jones et al., 1990)
+\citep[see][pg. 34]{key} ==>>
+        (see Jones et al., 1990, pg. 34)
+\end{verbatim}}
+
+
+\noindent
+(Note: in standard LaTeX, only one note is allowed, after the ref.
+Here, one note is like the standard, two make pre- and post-notes.)
+
+
+{%
+\begin{verbatim}
+\citealt{key}   ==>> Jones et al. 1990
+\citealt*{key}  ==>> Jones, Baker, and
+                        Williams 1990
+\citealp{key}   ==>> Jones et al., 1990
+\citealp*{key}  ==>> Jones, Baker, and
+                        Williams, 1990
+\end{verbatim}}
+
+
+\noindent
+Additional citation possibilities (both author-year and numerical modes)
+
+
+{%
+\begin{verbatim}
+\citeauthor{key}       ==>> Jones et al.
+\citeauthor*{key}      ==>> Jones, Baker, and
+                                Williams
+\citeyear{key}         ==>> 1990
+\citeyearpar{key}      ==>> (1990)
+\citetext{priv. comm.} ==>> (priv. comm.)
+\citenum{key}          ==>> 11 [non-superscripted]
+\end{verbatim}}
+
+
+\noindent
+Note: full author lists depends on whether the bib style supports them;
+if not, the abbreviated list is printed even when full requested.
+
+\noindent
+For names like della Robbia at the start of a sentence, use
+
+
+{%
+\begin{verbatim}
+\Citet{dRob98}      ==>> Della Robbia (1998)
+\Citep{dRob98}      ==>> (Della Robbia, 1998)
+\Citeauthor{dRob98} ==>> Della Robbia
+\end{verbatim}}
+
+
+\noindent
+The following is an example for \verb+\cite{...}+: \cite{rahman2019centroidb}. Another example for \verb+\citep{...}+: \citep{bahdanau2014neural,imboden2018cardiorespiratory,motiian2017unified,american2013acsm,murphy2012machine,ji20123d}.
+Sample cites here \cite{krizhevsky2012imagenet,horvath2018dna} and \cite{pyrkov2018quantitative}, \cite{wang2018face}, \cite{lecun2015deep,zhang2018fine,ravi2016deep}.
+
+
+\section{Lists}\label{sec9}
+
+List in \LaTeX{} can be of three types: numbered, bulleted and unnumbered. ``enumerate'' environment produces numbered list,
+``itemize'' environment produces bulleted list and ``unlist'' environment produces unnumbered list.
+In each environments, new entry is added via the \verb+\item+ command.
+\begin{enumerate}[1.]
+\item This is the 1st item
+
+\item Enumerate creates numbered lists, itemize creates bulleted lists and
+unnumerate creates unnumbered lists.
+\begin{enumerate}[(a)]
+\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+
+\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+\begin{enumerate}[(ii)]
+\item Third level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+
+\item Third level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+\end{enumerate}
+
+\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+
+\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+\end{enumerate}
+
+\item Enumerate creates numbered lists, itemize creates bulleted lists and
+description creates unnumbered lists.
+
+\item Numbered lists continue.
+\end{enumerate}
+List in \LaTeX{} can be of three types: enumerate, itemize and description.
+In each environments, new entry is added via the \verb+\item+ command.
+\begin{itemize}
+\item First level bulleted list. This is the 1st item
+
+\item First level bulleted list. Itemize creates bulleted lists and description creates unnumbered lists.
+\begin{itemize}
+\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
+
+\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
+
+\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
+\end{itemize}
+
+\item First level bulleted list. Itemize creates bulleted lists and description creates unnumbered lists.
+
+\item First level bulleted list. Bullet lists continue.
+\end{itemize}
+
+\noindent
+Example for unnumbered list items:
+
+\begin{unlist}
+\item Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
+
+\item Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
+
+\item sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
+\end{unlist}
+
+\section{Examples for theorem like environments}\label{sec10}
+
+For theorem like environments, we require \verb+amsthm+ package. There are three types of predefined theorem styles
+exists - \verb+thmstyleone+, \verb+thmstyletwo+ and \verb+thmstylethree+
+
+\medskip
+\noindent\begin{tabular}{|l|p{13pc}|}
+\hline
+\verb+thmstyleone+ & Numbered, theorem head in bold font and theorem text in italic style \\\hline
+\verb+thmstyletwo+ & Numbered, theorem head in roman font and theorem text in italic style \\\hline
+\verb+thmstylethree+ & Numbered, theorem head in bold font and theorem text in roman style \\\hline
+\end{tabular}
+
+
+\begin{theorem}[Theorem subhead]\label{thm1}
+Example theorem text. Example theorem text. Example theorem text. Example theorem text. Example theorem text.
+Example theorem text. Example theorem text. Example theorem text. Example theorem text. Example theorem text.
+Example theorem text.
+\end{theorem}
+
+Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit
+amet, consectetuer adipiscing elit. In hac habitasse platea dictumst. Integer tempus convallis augue.
+
+\begin{proposition}
+Example proposition text. Example proposition text. Example proposition text. Example proposition text. Example proposition text.
+Example proposition text. Example proposition text. Example proposition text. Example proposition text. Example proposition text.
+\end{proposition}
+
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
+viverra fermentum felis. Donec nonummy pellentesque ante.
+
+\begin{example}
+Phasellus adipiscing semper elit. Proin fermentum massa
+ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
+at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem.
+\end{example}
+
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
+viverra fermentum felis. Donec nonummy pellentesque ante.
+
+\begin{remark}
+Phasellus adipiscing semper elit. Proin fermentum massa
+ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
+at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem.
+\end{remark}
+
+Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit
+amet, consectetuer adipiscing elit. In hac habitasse platea dictumst.
+
+\begin{definition}[Definition sub head]
+Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text.
+\end{definition}
+
+Apart from the above styles, we have \verb+\begin{proof}+ \verb+...+ \verb+\end{proof}+ environment - with proof head in italic style and body text in roman font with an open square at the end of each proof environment.
+
+\begin{proof}Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text.
+\end{proof}
+
+Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero,
+pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
+vitae ornare odio metus a mi.
+
+\begin{proof}[Proof of Theorem~{\upshape\ref{thm1}}]
+Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text.
+\end{proof}
+
+\noindent
+For quote environment, one has to use\newline \verb+\begin{quote}...\end{quote}+
+\begin{quote}
+Quoted text example. Aliquam porttitor quam a lacus. Praesent vel arcu ut tortor cursus volutpat. In vitae pede quis diam bibendum placerat. Fusce elementum
+convallis neque. Sed dolor orci, scelerisque ac, dapibus nec, ultricies ut, mi. Duis nec dui quis leo sagittis commodo.
+\end{quote}
+Donec congue. Maecenas urna mi, suscipit in, placerat ut, vestibulum ut, massa. Fusce ultrices nulla et nisl (refer Figure~\ref{fig3}). Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam ligula arcu,
+elementum a, venenatis quis, sollicitudin sed, metus. Donec nunc pede, tincidunt in, venenatis vitae, faucibus vel (refer Table~\ref{tab3}).
+
+\section{Conclusion}
+
+Some Conclusions here.
+
+
+
+\section{Acknowledgments}
+The authors thank the anonymous reviewers for their valuable suggestions. 
+
+\section{Supplementary Material}
+Supplementary material is available at PNAS Nexus online.
+
+\section{Funding}
+This work is supported in part by funds from the National Science Foundation (NSF: \# 1636933 and \# 1920920).
+
+\section{Author contributions statement}
+Must include all authors, identified by initials, for example:
+S.R. and D.A. conceived the experiment(s),  S.R. conducted the experiment(s), S.R. and D.A. analysed the results.  S.R. and D.A. wrote and reviewed the manuscript.
+
+\section{Previous presentation}
+These results were previously presented at [conference, date].
+
+\section{Preprints}
+A preprint of this article is published at [DOI].
+
+\section{Data availability}
+The data underlying this article are available in [repository name, eg, the GenBank Nucleotide Database] at [URL], and can be accessed with [unique identifier, eg, accession number, deposition number].
+
+
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+
+\end{document}

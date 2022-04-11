@@ -1,0 +1,142 @@
+\documentclass[15pt, a4paper]{article}
+
+% Import package Math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Import package hyperref to ref
+\usepackage{hyperref}
+
+% Import package for figure 
+\usepackage{graphicx}
+
+\title{Hello \LaTeX{}}
+\author{Charles Le \and Than Quang Khoat}
+\date{August 7, 2002}
+
+% Avoid indent
+\setlength{\parindent}{0pt} 
+
+% Document
+\begin{document}
+    \maketitle
+    \section{Getting Started}
+    \textbf{Hello LaTex} Today I'm learning \LaTeX{}. \LaTeX{} is a great programming for writing math. I can write line math such as $a^2 + b^2 = c^2$. I can also give equations their our space:
+    \begin{equation}
+        \omega^2 + \beta^2 = \alpha^2
+    \end{equation}
+    
+    % Did you include the amsmath package command, \usepackage{amsmath}?  Some symbols and advanced math environments such as align will not work with out it!
+    % The equation environment, \begin{equation}, automatically puts you in display mode and includes equations numbers.  If you want to use this mode but don't want equation numbers use equation*
+    % To create quotation marks in LaTeX use the symbol ` (the ~ key) twice on the left and use the ' key twice on the right.   Using " on the left and right will not work properly.
+    % In the align environment you use the & to denote points of alignment.  If you want a second alignment point use &&.
+    % If you are having trouble with spacing use around = use the command \quad this adds extra horizontal space.
+    % When adding text in math mode you need to use the command \text{} where the text you want added is the argument.  This command tells LaTeX to use regular text at that location.
+    % \vec{} will create vector notation. \partial will give you partial derivatives, and remember for fractions use \frac{numerator}{denominator}.
+    % If you are having trouble getting your parenthesis to look right use the command \left( and \right) this will automatically fit the parenthesis to the equation within.  This also works with  \left[, \left{, and \left|, but you always need a \right to go with it.
+    
+    "Maxwell's equations" are named for James Clark Maxwell and are as follow:
+    
+    % Labels and reference are very simple to execute in LaTeX, can be used with any numbered object such as figures, equations, and sections, and are automatically updated whenever the document is complied.  If, for example, you realized you forgot an equation somewhere in the middle of your document, between 10 other equations, all the equations after the newly inserted equation would automatically be renumbered and proper references to them will reflect this new numbering!
+
+    % You will need to use the commands \label{} and \ref{}.
+
+    % It is common practice in LaTeX when labeling to use the format eq:name, fig:name, tab:name, and so on depending on the type of object you are labeling. If you are confused by this look at the labels in the solution
+
+    % Also, if you would like your citations to act as hyperlinks you need to use the package hyperref, \usepackage{hyperref}, remember with this package you can change the default hyperlink settings with the command \hypersetup{} in the preamble i.e. \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}.
+    
+    \begin{align}
+        % Assign delta to vec, Assign t to partial
+        \vec{\nabla} \cdot \vec{E} \quad &= \quad \frac{\rho}{\varepsilon_0} && \text{Gauss's Law}  \label{eq:GL} \\
+        \vec{\nabla} \cdot \vec{B} \quad &= \quad 0 && \text{Gauss's Law for Magnetism} \label{eq:GLM} \\
+        \vec{\nabla} \times \vec{E} \quad &= \quad -\frac{\partial\vec{B}}{\partial{t}} && \text{Faradav's Law of Induction} \label{eq:FL} \\ 
+        \vec{\nabla} \times \vec{B} \quad &= \quad \mu_0\left(\varepsilon_0 \frac{\partial\vec{E}}{\partial{t}} + \vec{J}\right) && \text{Ampere's Circuital Law}  \label{eq:ACL}
+    \end{align}
+    
+    Equations \ref{eq:GL}, \ref{eq:GLM}, \ref{eq:FL}, and \ref{eq:ACL} are some of the most important in Physics.
+    
+    % Section 2 
+    \section{What about Matrix Equations?}
+    
+    % Matrix
+    % There are different matrix environments in LaTeX such as matrix, pmatrix, and bmatrix.
+    % In a matrix use the & character to denote new columns and the \\ command to start new rows.
+    % If you are having trouble creating the dots use the commands \dots, \ddots, and \vdots. 
+    
+    \begin{equation*}
+        \begin{pmatrix}
+            a_{11} & a_{12} & \dots  & a_{1n} \\
+            a_{21} & a_{22} & \dots  & a_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{n1} & a_{n2} & \dots  & a_{nn}
+        \end{pmatrix}
+        \begin{bmatrix}
+            v_{1} \\
+            v_{2} \\
+            \vdots \\
+            v_{n}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            w_{1} \\
+            w_{2} \\
+            \vdots \\
+            w_{n}
+        \end{bmatrix}
+    \end{equation*}
+    % To include a caption with your table use the environment table, \begin{table}.
+    % To create the table itself you need to use the environment tabular, \begin{tabular}{}.
+    % In the second argument of tabular you will define the number of columns in the table, the justification of each column, as well as if you would like any lines between the columns.  In the table used in this question the command \begin{tabular}{|l||c|c|r|} was used.  This creates a 4 column matrix, the first column is left justified, l, the middle two are center justified, c, and the last column is right justified, r.  The table also has borders on the outside as well as between the columns using the | (shift backslash key).  Notice there is a double || after the first column.
+    % Entering values into your table works much like a matrix.  use the & character to separate columns and the \\ command to start working on a new row.  Use $ if you want to write in math mode.
+    % If you want to create a horizontal line at the top, bottom, or between rows of your table use the command \hline at the start of the row and after the last \\.
+    % Placing the command \centering at the start of the table of figure environment will center the object. 
+    % For figures you need to include the graphicx package, \usepackage{graphicx}.
+    % Using the graphicx package you can create an environment figure, \begin{figure}.
+    % To insert your figure use the command \includegraphics[]{}.​
+    % The optional argument of \includegraphics can be used to resize the figure try [width=\textwidth] and [width=.5\textwidth] and see the difference it makes.
+    % The required argument of \includegraphics is the name of the file, DO NOT include the file type and make sure the file is located in the same folder as the LaTeX document otherwise it is more complicated to include it. For example the argument for file bern.jpg should just be \includegraphics{bern}.
+    %When including a floating object in your document such as a figure or a table you can follow the required argument with an additional optional argument to indicate the preferred placement of the object. The letter h indicates here (current location), b indicates bottom (bottom of a page), and t indicated top (top of page).  Using an ! stresses to LaTeX to make this placement.  So you may see commands for figures of tables that look like this \begin{figure}[hbt!].
+    
+    % Figure (overleaf.com/learn/latex/Inserting_Images)
+    \section{Tables and Figures}
+    
+    \begin{table}[hbt!]
+        \centering
+        \begin{tabular}{|l||c|c|r|}
+            \hline 
+            x & 1 & 2 & 3 \\
+            \hline 
+            $f(x)$ & 4 & 8 & 12 \\
+            \hline
+            f(x) & 4 & 8 & 12 \\
+            \hline
+        \end{tabular}
+        \caption{This is a table that show how to create different lines as well as different justifications}
+        \label{tab:my_label}
+    \end{table}
+    
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale = .5]{Avatar.png}
+        \caption{Humans of HUST}
+        \label{Humans of HUST}
+        \end{figure}
+    
+    % Bibliography
+    % It is much easier to create a BibTex file using a citation management tool like Zotero or Mendeley.
+    % Use the \cite{} command where the argument is bibID for the citation in the .bib file.
+    % If you are citing multiple items at the same location you can use \cite{} command and separate the bibIDs with commas.
+    % Make sure use the command \bibliographystyle{} to tell LaTeX which bibliographic style to use.
+    % Some common styles are plain, ieeetr, acm, and apalike.
+    % To create your bibliography use the command \biblography{} where the argument is the name of the bib file.  DO NOT include .bib and MAKE SURE the .bib file is located in the same folder as the LaTeX document.
+    % You may need to compile your document twice in order to get cross references to work correctly
+    
+    \section{Bibliography}
+    You will probably want references in your document so that you can cite articles like \cite{frenkel_fine_2013, frenkel_optical_2013, frenkel_temperature_2012, frenkel_whispering-gallery_2013,frenkel_-chip_2016}
+    
+    % Auto RFRC (overleaf.com/learn/latex/Bibtex_bibliography_styles)
+    \bibliographystyle{ieeetr} 
+    \bibliography{bibl} % file bib name 
+    
+\end{document}

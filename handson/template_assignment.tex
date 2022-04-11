@@ -1,0 +1,63 @@
+% Template Assignment 
+% In practice, we should use template to speed up the initial creation of a LaTeX document. Often it is the case that the same packages and document structure will be applicable to many of the documents you are working on, in this case using a template will save you the time of having to input all of this information every time you create a new document.
+
+\documentclass[15pt, a4paper]{article}
+
+\usepackage{geometry} % Editing page layout
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% Create new command (overleaf.com/learn/latex/Commands)
+\newcommand{\question}[2][]{
+    % [2]: number of parameters
+    % []: the default value for the first parameter. This is what makes the first parameter optional, if not passed it will use this default value.
+    \begin{flushleft}
+        % #1, #2 is para 1, para 2 
+        % \textit: change font text
+        \textbf{Question #1}: \textit{#2}
+    \end{flushleft}}
+
+% Use if you want a boldface solution line
+\newcommand{\sol}{
+    \begin{flushleft}
+        \textbf{Solution}:
+    \end{flushleft}}
+
+% Define Make title
+\newcommand{\maketitletwo}[2][]{
+\begin{center}
+    \Large{\textbf{Assignment #1}
+    
+        Course Title} % Name of course here, enter 1 line to separate with title
+    \vspace{5pt} % Inserts a space after the current line (5pt)
+    
+    % Font Title (overleaf.com/learn/latex/Font_sizes%2C_families%2C_and_styles)
+    \normalsize{Charles Le  % Your name here
+        
+    \today}        % Change to due date if preferred
+    \vspace{20pt} % Insert space after line = 20pt
+\end{center}}
+
+% Start document 
+\begin{document}
+    \maketitletwo[1]  % Optional argument is assignment number
+    % Keep a blank space between maketitletwo and \question[1]
+    
+    \question[1]{Here is my first question}
+    
+    % YOUR SOLUTION HERE
+    \sol{I don't have solution.}
+    
+    \question[2]{Here is my second question}
+    
+    YOUR SOLUTION HERE
+    
+    \question[3]{What is the \Large{$\int_0^2 x^2 \, dx$}\normalsize{. Show all steps}}
+    
+    % Integral 
+    \begin{align*}
+        \int_0^2 x^2 &= \left. \frac{x^3}{3} \right|_0^2 \\
+                &= \frac{2^3}{3}-\frac{0^3}{3}\\
+                &= \frac{8}{3}
+    \end{align*}
+\end{document}

@@ -1,0 +1,36 @@
+% PREAMBLE
+% \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+\documentclass[15pt,a4paper]{article} 
+
+% \usepackage is a command that allows you to add functionality to your LaTeX code
+\usepackage{amsmath}
+
+\title{Attention is All You Need}
+\author{Charles Le \and Than Quang Khoat}
+\date{\today}
+
+% Avoid indent 
+\setlength{\parindent}{0pt} 
+
+% The preamble ends with the command \begin{document}
+% All begin commands must be paired with an end command somewhere
+\begin{document}
+    % Creates title using information in preamble (title, author, date)
+    \maketitle 
+    % Creates a section
+    \section{Abstract} 
+    % Bold with \textbf{}
+    \textbf{Transformer} is the most important in Deep Learning nowadays, I am going write this article by \LaTeX.
+    % $ tells LaTex to compile as math
+    \LaTeX{} is a great program for writing math. I can write in line math such as $a^2+b^2=c^2$. I can also give equations their own space:
+    % Create an environment and it complied as math 
+    \begin{equation}
+        \gamma^2 + \beta^2 = \omega^2
+    \end{equation}
+    If I do not leave any blank lines \LaTeX{} will continue  this text without making it into a new paragraph.  Notice how there was no indentation in the text after equation (1).  
+    Also notice how even though I hit enter after that sentence and here $\downarrow$
+    \LaTeX{} formats the sentence without any break.  Also look how it doesn't matter how many spaces I put between my words. \\ % use for enter a line 
+    For a new paragraph I can leave a blank space in my code. 
+
+\end{document} % This is the end of the document
+\end{document}
