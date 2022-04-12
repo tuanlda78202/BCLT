@@ -1,2 +1,2 @@
 # LaTeX
-JAIR
+Bootcamp LaTeX for publishing AI research papers
