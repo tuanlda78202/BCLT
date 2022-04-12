@@ -13,6 +13,6 @@
 </p>
     
 ### Materials for writing  AI research papers
-* [Overleaf](overleaf.com) 
+* [Overleaf](https://www.overleaf.com/project) 
 * [Template LaTeX](https://www.overleaf.com/latex/templates)
 * [Detexify](http://detexify.kirelabs.org/classify.html)
