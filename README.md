@@ -11,5 +11,8 @@
   <a href="https://twitter.com/tuanlda78202">
     <img src="https://img.shields.io/badge/Twitter-%23daf6e5?style=flat&logo=twitter&logoColor=black" /> 
 </p>
-
-Bootcamp LaTeX - prepare for publishing AI research papers.
+    
+### Materials for writing  AI research papers
+* [Overleaf](overleaf.com) 
+* [Template LaTeX](https://www.overleaf.com/latex/templates)
+* [Detexify](http://detexify.kirelabs.org/classify.html)
