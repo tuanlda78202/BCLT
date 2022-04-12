@@ -1,0 +1,108 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Solve Equations}
+\author{Charles Le \and Le Duc Anh Tuan}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    
+    % Hint for part A
+    % To get the spacing right try using the command \, before dx on the left side of the equation
+    % The command \limits helps position the integral limits where you want them, \limits_a^b.  
+    % To get the size of the line at the end of the equation try using the command \right|
+    % To use this equation without a command \left| creating lines on both sides of the equation place the command \left. on the left side of the equation.  This technique can be used with any of the \right or \left commands if you only want an object on one side of your equation.
+    \textbf{Exercises: }
+    \begin{equation}
+        \displaystyle \int_a^b x^2 dx = \left.\frac{x^2}{2} \right|_a^b
+    \end{equation}
+    
+    \begin{equation}
+        \displaystyle \iiint f(x,y,z) dV = F \\
+    \end{equation}
+    
+    \begin{equation}
+        \frac{dx}{dy} = x' = \displaystyle \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}
+    \end{equation}
+    
+    \begin{equation}
+        |x| = \begin{cases}
+                -x, & \text{if $x < 0$} \\
+                x, & \text{if $x \ge 0$}
+              \end{cases}
+    \end{equation}
+    
+    \begin{equation}
+        F(x) = A_0 + \displaystyle \sum_{i=1}^n\left[A_n\cos(\frac{2\pi nx}{P}) + B_n\sin(\frac{2\pi nx}{P})\right]
+    \end{equation}
+    
+    \begin{equation}
+        \displaystyle \sum_{n} \frac{1}{n^s} = \prod_p \frac{1}{1 - \frac{1}{p^n}}
+    \end{equation}
+    
+    \begin{equation}
+        m\ddot{x} + c\dot{x} + kx = F_0\sin(2\pi ft)
+    \end{equation}
+    
+    \begin{align}
+        \begin{split}
+            f(x) \quad &=  \quad x^2 + 3x + 5x^2 + 8 + 6x \\ 
+             \quad &=  \quad 6x^2 + 9x + 8 \\
+             \quad &=  \quad x(6x+9) + 8 \\
+        \end{split}
+    \end{align}
+    
+    \begin{equation}
+        X = \frac{F_0}{k} \frac{1}{\sqrt{(1-r^2)^2 + (2\zeta r)^2}}
+    \end{equation}
+    
+    % Double subscript (overleaf.com/learn/latex/Errors/Double_subscript)
+    \begin{equation}
+        G_{\mu\upsilon} \equiv R_{\mu\upsilon} - \frac{1}{2} Rg_{\mu\upsilon} = \frac{8\pi G}{e^4} T_{\mu\upsilon}
+    \end{equation}
+    
+    % tex.stackexchange.com/questions/48459/whats-the-difference-between-mathrm-and-operatorname
+    \begin{equation}
+        \mathrm{6CO_2 + 6H_2 O \rightarrow{} C_6 H_{12} O_6 + 6O_2}
+    \end{equation}
+    
+    \begin{equation}
+        \mathrm{SO_4^{2-} + Ba^{2+} \rightarrow{} BaSO_4}
+    \end{equation}
+    
+    % Matrix
+    \begin{equation}
+        \begin{pmatrix}
+            a_{11} & a_{12} & \dots  & a_{1n} \\
+            a_{21} & a_{22} & \dots  & a_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{n1} & a_{n2} & \dots  & a_{nn}
+        \end{pmatrix}
+        \begin{pmatrix}
+            v_{1} \\
+            v_{2} \\
+            \vdots \\
+            v_{n}
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            w_{1} \\
+            w_{2} \\
+            \vdots \\
+            w_{n}
+        \end{pmatrix}
+    \end{equation}    
+    
+    % \mathbf prevent italic font
+    \begin{equation}
+        \frac{\partial{\textbf{u}}}{\partial{t}} + (\textbf{u} \cdot \nabla)\mathbf{\textbf{u}} - \upsilon \nabla^2 (\mathbf{\textbf{u}}) = -\nabla \mathbf{\textbf{h}}
+    \end{equation}
+    
+    \begin{equation}
+        \alpha A \beta B \gamma \Gamma \delta \Delta \pi \Pi \omega \Omega
+    \end{equation}
+\end{document}
